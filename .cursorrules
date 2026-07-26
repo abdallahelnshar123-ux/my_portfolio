@@ -1,0 +1,52 @@
+# My Portfolio Project Rules
+
+## Project Overview
+- **Name:** My Portfolio
+- **Type:** Flutter Web/Mobile Application
+- **Purpose:** Personal portfolio website showcasing projects, skills, and contact information.
+- **Current Status:** Single-page scrollable architecture with Hero, About, Skills, Projects, and Contact sections.
+
+## Technology Stack
+- **Framework:** Flutter
+- **UI Architecture:** Custom responsive layout system using `Stack` and `SingleChildScrollView`.
+- **Navigation:** Section-based scrolling using `GlobalKey` and `Scrollable.ensureVisible`.
+- **Theme:** Centralized Theme system in `lib/core/theme` (Primary: `AppTheme.dark`).
+- **Responsive Design:** Custom `Responsive` utility in `lib/core/responsive` using `Responsive.of(context)`.
+
+## Directory Structure (lib/)
+```
+lib/
+├── app/                  # Application-level configuration
+│   ├── app.dart          # Root App widget (MaterialApp, Theme, Home)
+├── core/                 # Shared resources and logic
+│   ├── constants/        # AppAssets, AppDurations, AppSizes, AppSpacing
+│   ├── extensions/       # Context/ScreenSize extensions
+│   ├── layout/           # Base layout widgets (AppScaffold, Section, ContentContainer)
+│   ├── responsive/       # Breakpoints and Responsive utility class
+│   ├── theme/            # AppColors, AppTextTheme, AppTheme
+│   └── widgets/          # Reusable UI components
+├── features/             # Feature-based modules
+│   └── home/             # Main Home feature (Single Page)
+│       ├── layout/       # HomeLayout (handles scrolling and section arrangement)
+│       ├── models/       # NavItem, etc.
+│       ├── pages/        # HomePage entry point
+│       └── widgets/      # Section widgets (Hero, About, Skills, Projects, Contact)
+│           └── hero/     # Complex Hero section components
+└── main.dart             # Entry point
+```
+
+## AI Agent Guidelines
+1. **Consistency:** Always follow the existing design patterns. Use `AppColors` and `AppTextTheme` for styling.
+2. **Responsiveness:** Always use `Responsive.of(context)` to access padding, font sizes, and layout constraints. Avoid hardcoding values.
+3. **Section Navigation:** When adding new sections, add a `GlobalKey` in `HomeLayout`, create a `NavItem`, and ensure it's integrated into the `scrollTo` logic.
+4. **Naming Conventions:**
+    - Classes: `PascalCase`
+    - Files/Folders: `snake_case`
+    - Variables/Methods: `camelCase`
+5. **Assets:** Always use `AppAssets` class for referencing images and icons.
+6. **Layout Constraints:** Use `ContentContainer` for sections that need a maximum width on large screens.
+
+## Current Context
+- The project implements a floating `LeftNavigation` over a scrollable `Column` of sections.
+- Sections are wrapped in a `Container` with `AppSizes.radius` and `r.pagePadding` inside `HomeLayout`.
+- Focus is on refining individual sections (Skills, Projects) while maintaining the global responsive state.

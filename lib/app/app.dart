@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../core/theme/app_theme.dart';
-import '../features/home/presentation/pages/home_page.dart';
+import '../features/home/pages/home_page.dart';
 
 class PortfolioApp extends StatelessWidget {
   const PortfolioApp({super.key});

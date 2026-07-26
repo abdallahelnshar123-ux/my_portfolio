@@ -8,4 +8,5 @@ abstract final class AppSpacing {
   static const xl = 32.0;
   static const xxl = 48.0;
   static const xxxl = 64.0;
+  static const x4l = 80.0;
 }
