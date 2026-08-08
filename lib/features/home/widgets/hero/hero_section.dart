@@ -1,4 +1,7 @@
+import 'dart:js_interop';
+
 import 'package:flutter/material.dart';
+import 'package:my_portfolio/core/extensions/build_context_extension.dart';
 import 'package:my_portfolio/features/home/widgets/hero/right_side_bar.dart';
 
 import 'hero_background.dart';
@@ -9,8 +12,9 @@ class HeroSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var r = context.responsive;
     return SizedBox(
-      height: MediaQuery.sizeOf(context).height,
+      height: r.sectionHeight,
       child: Stack(children: [HeroBackground(), HeroContent(), RightSidebar()]),
     );
   }
