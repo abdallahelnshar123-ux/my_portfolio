@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/features/home/widgets/about_section.dart';
+import 'package:my_portfolio/features/home/widgets/about_me/about_section.dart';
 import 'package:my_portfolio/features/home/widgets/contact_section.dart';
 import 'package:my_portfolio/features/home/widgets/left_navigation.dart';
 import 'package:my_portfolio/features/home/widgets/projects_section.dart';

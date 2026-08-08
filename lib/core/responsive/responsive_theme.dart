@@ -23,7 +23,8 @@ class ResponsiveTheme {
     required this.socialIconWidth,
     required this.rightSideBarSpacing,
     required this.leftNavigationFontSize,
-
+    required this.dataContainerMargin,
+    required this.dataContainerRadius,
   });
 
   final double pagePadding;
@@ -55,6 +56,10 @@ class ResponsiveTheme {
 
   /// left navigation
   final double leftNavigationFontSize;
+
+  /// about section
+  final double dataContainerMargin;
+  final double dataContainerRadius;
 
 
 
