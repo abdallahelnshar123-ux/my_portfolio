@@ -3,7 +3,8 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:my_portfolio/core/constants/app_assets.dart';
 import 'package:my_portfolio/core/extensions/build_context_extension.dart';
 import 'package:my_portfolio/core/theme/app_colors.dart';
-import 'package:my_portfolio/features/home/widgets/hero/model/social_item.dart';
+import 'package:my_portfolio/features/home/models/social_item.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class RightSidebar extends StatelessWidget {
   const RightSidebar({super.key});
@@ -44,7 +45,12 @@ class RightSidebar extends StatelessWidget {
                   tapTargetSize: .shrinkWrap,
                   minimumSize: Size.square(r.socialIconWidth),
                 ),
-                onPressed: () {},
+                onPressed: () async {
+                  final Uri url = Uri.parse(socialItem.link);
+                  if (await canLaunchUrl(url)) {
+                    await launchUrl(url, mode: LaunchMode.externalApplication);
+                  }
+                },
                 icon: SvgPicture.asset(
                   socialItem.icon,
                   width: r.socialIconWidth,
@@ -65,7 +71,7 @@ class RightSidebar extends StatelessWidget {
 List<SocialItem> socialIcons = [
   SocialItem(
     icon: AppAssets.linkedinIcon,
-    link: 'www.linkedin.com/in/abdallah-elnshar',
+    link: 'https://www.linkedin.com/in/abdallah-elnshar',
   ),
   SocialItem(
     icon: AppAssets.facebookIcon,

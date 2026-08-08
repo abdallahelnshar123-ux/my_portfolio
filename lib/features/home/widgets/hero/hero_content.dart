@@ -22,13 +22,13 @@ class HeroContent extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         spacing: 20,
         children: [
-          const Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text('mobile application developer'),
-              Text('lets collaborate'),
-            ],
-          ),
+          // const Row(
+          //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          //   children: [
+          //     Text('mobile application developer'),
+          //     Text('lets collaborate'),
+          //   ],
+          // ),
           const Spacer(),
           FittedBox(
             fit: BoxFit.scaleDown,

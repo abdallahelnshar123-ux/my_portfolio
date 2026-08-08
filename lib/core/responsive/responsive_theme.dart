@@ -22,6 +22,7 @@ class ResponsiveTheme {
     required this.rightSideTextSize,
     required this.socialIconWidth,
     required this.rightSideBarSpacing,
+    required this.leftNavigationFontSize,
 
   });
 
@@ -52,7 +53,12 @@ class ResponsiveTheme {
   final double rightSideBarArrowSize;
   final double socialIconWidth;
 
-  ///
+  /// left navigation
+  final double leftNavigationFontSize;
+
+
+
+
 
   final double heading;
   final double body;

@@ -29,6 +29,14 @@ class ResponsiveValues {
     rightSideBarSpacing: 10,
 
 
+    /// left navigation
+    leftNavigationFontSize: 13,
+
+
+
+
+
+
 
     heading: 30,
     body: 16,
@@ -65,7 +73,8 @@ class ResponsiveValues {
     rightSideTextSize: 15,
     socialIconWidth: 10,
     rightSideBarSpacing: 10,
-
+    /// left navigation
+    leftNavigationFontSize: 16,
 
 
 
@@ -92,7 +101,7 @@ class ResponsiveValues {
 
     /// hero content
     heroTitle: 150,
-    techIconPadding: 12,
+    techIconPadding: 10,
     techIconWidth: 40,
     techIconRadius: 12,
     contentBottomPadding: 40,
@@ -107,9 +116,13 @@ class ResponsiveValues {
     socialIconWidth: 15,
     rightSideBarSpacing: 10,
 
+    /// left navigation
+    leftNavigationFontSize: 20,
 
 
-    ///
+
+
+
 
     heading: 42,
     body: 20,

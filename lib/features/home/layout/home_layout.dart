@@ -80,7 +80,7 @@ class _HomeLayoutState extends State<HomeLayout> {
           ),
         ),
         Padding(
-          padding: EdgeInsets.all(r.pagePadding),
+          padding: EdgeInsets.all(r.pagePadding+5),
           child: LeftNavigation(
             items: navItems,
             onTap: (item) {
