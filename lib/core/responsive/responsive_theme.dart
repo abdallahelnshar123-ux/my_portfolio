@@ -9,13 +9,50 @@ class ResponsiveTheme {
     required this.buttonHeight,
     required this.contentMaxWidth,
     required this.heroGradientRadius,
+    required this.rightSideBarPadding,
+    required this.techIconPadding,
+    required this.techIconWidth,
+    required this.techIconRadius,
+    required this.sectionHeight,
+    required this.contentBottomPadding,
+    required this.contentLeftPadding,
+    required this.contentRightPadding,
+    required this.contentTopPadding,
+    required this.rightSideBarArrowSize,
+    required this.rightSideTextSize,
+    required this.socialIconWidth,
+    required this.rightSideBarSpacing,
+
   });
 
   final double pagePadding;
   final double sectionSpacing;
 
-  final double heroTitle;
+  /// hero section
+  final double sectionHeight;
+
+  /// hero background
   final double heroGradientRadius;
+
+  /// hero content
+  final double heroTitle;
+  final double techIconPadding;
+  final double techIconRadius;
+  final double techIconWidth;
+  final double contentRightPadding;
+  final double contentTopPadding;
+  final double contentBottomPadding;
+  final double contentLeftPadding;
+
+  /// right sidebar
+
+  final double rightSideBarPadding;
+  final double rightSideBarSpacing;
+  final double rightSideTextSize;
+  final double rightSideBarArrowSize;
+  final double socialIconWidth;
+
+  ///
 
   final double heading;
   final double body;
