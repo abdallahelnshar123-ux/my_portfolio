@@ -9,4 +9,6 @@ extension ScreenSize on BuildContext {
   double get height => MediaQuery.of(this).size.height;
 
   ResponsiveTheme get responsive => Responsive.of(this);
+
+  TextTheme get textTheme => Theme.of(this).textTheme;
 }

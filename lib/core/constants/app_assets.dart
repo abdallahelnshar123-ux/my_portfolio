@@ -7,4 +7,5 @@ class AppAssets {
   static const String gitIcon = 'assets/tech/git_icon.svg';
   static const String githubIcon = 'assets/tech/github_icon.svg';
   static const String postmanIcon = 'assets/tech/postman_icon.svg';
+  static const String arrowIcon = 'assets/icons/arrow.svg';
 }
