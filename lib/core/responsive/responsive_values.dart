@@ -32,6 +32,12 @@ class ResponsiveValues {
     /// left navigation
     leftNavigationFontSize: 13,
 
+    /// about section
+    dataContainerMargin: 30,
+    dataContainerRadius: 80,
+    aboutMeBodyFontSize: 10,
+    aboutMeFontSize: 30,
+
 
 
 
@@ -76,6 +82,12 @@ class ResponsiveValues {
     /// left navigation
     leftNavigationFontSize: 16,
 
+    /// about section
+    dataContainerMargin: 30,
+    dataContainerRadius: 100,
+    aboutMeBodyFontSize: 13,
+    aboutMeFontSize: 50,
+
 
 
 
@@ -118,6 +130,12 @@ class ResponsiveValues {
 
     /// left navigation
     leftNavigationFontSize: 20,
+
+    /// about section
+    dataContainerMargin: 130,
+    dataContainerRadius: 250,
+    aboutMeBodyFontSize: 15,
+    aboutMeFontSize: 70,
 
 
 

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:my_portfolio/core/animated_background/data/tech_icons.dart';
 import 'package:my_portfolio/core/extensions/build_context_extension.dart';
 import 'package:my_portfolio/core/theme/app_colors.dart';
@@ -33,10 +34,11 @@ class HeroContent extends StatelessWidget {
           FittedBox(
             fit: BoxFit.scaleDown,
             child: Text(
-              "Abdallah",
-              style: Theme.of(
-                context,
-              ).textTheme.displayLarge?.copyWith(fontSize: r.heroTitle),
+              "ABDALLAH",
+              style: GoogleFonts.carterOneTextTheme().displayLarge?.copyWith(
+                fontSize: r.heroTitle,
+                color: AppColors.white,
+              ),
             ),
           ),
           Row(
