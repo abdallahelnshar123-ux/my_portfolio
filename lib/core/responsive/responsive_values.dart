@@ -34,7 +34,11 @@ class ResponsiveValues {
 
     /// about section
     dataContainerMargin: 30,
-    dataContainerRadius: 30,
+    dataContainerRadius: 80,
+    aboutMeBodyFontSize: 10,
+    aboutMeFontSize: 30,
+
+
 
 
 
@@ -80,7 +84,11 @@ class ResponsiveValues {
 
     /// about section
     dataContainerMargin: 30,
-    dataContainerRadius: 40,
+    dataContainerRadius: 100,
+    aboutMeBodyFontSize: 13,
+    aboutMeFontSize: 50,
+
+
 
 
 
@@ -126,6 +134,8 @@ class ResponsiveValues {
     /// about section
     dataContainerMargin: 130,
     dataContainerRadius: 250,
+    aboutMeBodyFontSize: 15,
+    aboutMeFontSize: 70,
 
 
 

@@ -25,6 +25,8 @@ class ResponsiveTheme {
     required this.leftNavigationFontSize,
     required this.dataContainerMargin,
     required this.dataContainerRadius,
+    required this.aboutMeBodyFontSize,
+    required this.aboutMeFontSize,
   });
 
   final double pagePadding;
@@ -60,6 +62,8 @@ class ResponsiveTheme {
   /// about section
   final double dataContainerMargin;
   final double dataContainerRadius;
+  final double aboutMeFontSize;
+  final double aboutMeBodyFontSize;
 
 
 
