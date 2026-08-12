@@ -11,4 +11,11 @@ class AppAssets {
   static const String facebookIcon = 'assets/icons/facebook_icon.svg';
   static const String instagramIcon = 'assets/icons/instagram_icon.svg';
   static const String linkedinIcon = 'assets/icons/linkedin_icon.svg';
+  static const String pbVaultIcon = 'assets/images/pb_vault_preview.png';
+  static const String moviesIcon = 'assets/images/movies_preview.png';
+  static const String newsIcon = 'assets/images/news_preview.png';
+  static const String eventlyIcon = 'assets/images/evently_preview.png';
+  static const String easyThemeIcon = 'assets/images/easy_theme_preview.png';
+  static const String googlePlayIcon = 'assets/icons/google_play_icon.svg';
+  static const String appStoreIcon = 'assets/icons/app_store_icon.svg';
 }

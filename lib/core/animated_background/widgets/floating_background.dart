@@ -37,7 +37,7 @@ class _FloatingBackgroundState extends State<FloatingBackground>
     return IgnorePointer(
       child: AnimatedBuilder(
         animation: controller,
-        builder: (_, __) {
+        builder: (_, _) {
           return Stack(
             children: controller.icons.map((icon) {
               return Positioned(

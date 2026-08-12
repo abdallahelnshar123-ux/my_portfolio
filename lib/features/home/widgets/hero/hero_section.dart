@@ -1,5 +1,3 @@
-import 'dart:js_interop';
-
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/core/extensions/build_context_extension.dart';
 import 'package:my_portfolio/features/home/widgets/hero/right_side_bar.dart';

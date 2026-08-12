@@ -83,7 +83,7 @@ class AboutSection extends StatelessWidget {
               style: GoogleFonts.courgetteTextTheme().bodySmall?.copyWith(
                 color: AppColors.white,
                 fontWeight: .w200,
-                fontSize: r.aboutMeBodyFontSize
+                fontSize: r.aboutMeBodyFontSize,
               ),
             ),
           ),
