@@ -1,6 +1,7 @@
 class ResponsiveTheme {
   const ResponsiveTheme({
-    required this.pagePadding,
+    required this.pagePaddingVertical,
+    required this.pagePaddingHorizontal,
     required this.sectionSpacing,
     required this.heroTitle,
     required this.heading,
@@ -29,7 +30,8 @@ class ResponsiveTheme {
     required this.aboutMeFontSize,
   });
 
-  final double pagePadding;
+  final double pagePaddingVertical;
+  final double pagePaddingHorizontal;
   final double sectionSpacing;
 
   /// hero section

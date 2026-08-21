@@ -18,4 +18,6 @@ class AppAssets {
   static const String easyThemeIcon = 'assets/images/easy_theme_preview.png';
   static const String googlePlayIcon = 'assets/icons/google_play_icon.svg';
   static const String appStoreIcon = 'assets/icons/app_store_icon.svg';
+  static const String aLogoIcon = 'assets/icons/a_logo.svg';
+  static const String whatsappIcon = 'assets/icons/whatsapp_icon.svg';
 }

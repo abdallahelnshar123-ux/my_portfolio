@@ -2,7 +2,8 @@ import 'responsive_theme.dart';
 
 class ResponsiveValues {
   static const mobile = ResponsiveTheme(
-    pagePadding: 35,
+    pagePaddingHorizontal: 35,
+    pagePaddingVertical: 40,
     sectionSpacing: 80,
 
     /// hero section
@@ -12,7 +13,7 @@ class ResponsiveValues {
     heroGradientRadius: 0.58,
 
     /// hero content
-    heroTitle: 80,
+    heroTitle: 60,
     techIconPadding: 5,
     techIconWidth: 30,
     techIconRadius: 7,
@@ -30,7 +31,7 @@ class ResponsiveValues {
 
 
     /// left navigation
-    leftNavigationFontSize: 13,
+    leftNavigationFontSize: 12,
 
     /// about section
     dataContainerMargin: 30,
@@ -54,7 +55,9 @@ class ResponsiveValues {
   );
 
   static const tablet = ResponsiveTheme(
-    pagePadding: 55,
+    pagePaddingHorizontal: 55,
+    pagePaddingVertical: 60,
+
     sectionSpacing: 120,
 
     /// hero section
@@ -64,7 +67,7 @@ class ResponsiveValues {
     heroGradientRadius: 0.46,
 
     /// hero content
-    heroTitle: 110,
+    heroTitle: 80,
     techIconPadding: 10,
     techIconWidth: 30,
     techIconRadius: 10,
@@ -102,7 +105,8 @@ class ResponsiveValues {
   );
 
   static const desktop = ResponsiveTheme(
-    pagePadding: 80,
+    pagePaddingHorizontal: 80,
+    pagePaddingVertical: 90,
     sectionSpacing: 160,
 
     /// hero section
