@@ -7,7 +7,7 @@ class ResponsiveValues {
     sectionSpacing: 80,
 
     /// hero section
-    sectionHeight: 600,
+    sectionHeight: 550,
 
     /// hero background
     heroGradientRadius: 0.58,
@@ -21,6 +21,13 @@ class ResponsiveValues {
     contentLeftPadding: 30,
     contentRightPadding: 30,
     contentTopPadding: 50,
+    heroButtonContentSize: 13 ,
+    heroButtonPadding: 10,
+
+
+
+
+
 
     /// right sidebar
     rightSideBarPadding: 15,
@@ -61,7 +68,7 @@ class ResponsiveValues {
     sectionSpacing: 120,
 
     /// hero section
-    sectionHeight: 750,
+    sectionHeight: 700,
 
     /// hero background
     heroGradientRadius: 0.46,
@@ -75,6 +82,12 @@ class ResponsiveValues {
     contentLeftPadding: 10,
     contentRightPadding: 10,
     contentTopPadding: 10,
+    heroButtonContentSize: 20 ,
+    heroButtonPadding: 15,
+
+
+
+
 
     /// right sidebar
     rightSideBarPadding: 25,
@@ -110,7 +123,7 @@ class ResponsiveValues {
     sectionSpacing: 160,
 
     /// hero section
-    sectionHeight: 800,
+    sectionHeight: 900,
 
     /// hero background
     heroGradientRadius: 0.65,
@@ -124,6 +137,11 @@ class ResponsiveValues {
     contentLeftPadding: 10,
     contentRightPadding: 10,
     contentTopPadding: 10,
+    heroButtonContentSize: 25 ,
+    heroButtonPadding: 20,
+
+
+
 
     /// right sidebar
     rightSideBarPadding: 35,

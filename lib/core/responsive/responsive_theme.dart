@@ -28,6 +28,8 @@ class ResponsiveTheme {
     required this.dataContainerRadius,
     required this.aboutMeBodyFontSize,
     required this.aboutMeFontSize,
+    required this.heroButtonContentSize,
+    required this.heroButtonPadding,
   });
 
   final double pagePaddingVertical;
@@ -49,6 +51,8 @@ class ResponsiveTheme {
   final double contentTopPadding;
   final double contentBottomPadding;
   final double contentLeftPadding;
+  final double heroButtonContentSize;
+  final double heroButtonPadding;
 
   /// right sidebar
 

@@ -28,7 +28,7 @@ class _LetsTalkButtonState extends State<LetsTalkButton> {
       icon: SvgPicture.asset(
         AppAssets.whatsappIcon,
         colorFilter: ColorFilter.mode(AppColors.background, .srcIn),
-        width: 13,
+        width: 15,
       ),
       onPressed: _onPressed,
       style: ButtonStyle(
