@@ -5,8 +5,8 @@ import 'package:my_portfolio/core/extensions/build_context_extension.dart';
 import '../../../../core/animated_background/data/tech_icons.dart';
 import '../../../../core/theme/app_colors.dart';
 
-class ContentWidget extends StatelessWidget {
-  const ContentWidget({super.key});
+class ContentWidgetDesktop extends StatelessWidget {
+  const ContentWidgetDesktop({super.key});
 
   @override
   Widget build(BuildContext context) {

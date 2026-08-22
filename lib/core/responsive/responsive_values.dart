@@ -39,7 +39,12 @@ class ResponsiveValues {
     dataContainerRadius: 80,
     aboutMeBodyFontSize: 10,
     aboutMeFontSize: 30,
-    aboutSectionHeight: 0.6,
+    aboutSectionHeight: 2,
+
+
+
+
+
 
     heading: 30,
     body: 16,
@@ -89,7 +94,7 @@ class ResponsiveValues {
     dataContainerRadius: 100,
     aboutMeBodyFontSize: 13,
     aboutMeFontSize: 50,
-    aboutSectionHeight: 0.6,
+    aboutSectionHeight: 1.9,
 
     heading: 36,
     body: 18,
