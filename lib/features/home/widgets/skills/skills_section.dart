@@ -1,34 +1,77 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:my_portfolio/core/extensions/build_context_extension.dart';
+import 'package:my_portfolio/core/responsive/responsive.dart';
 import 'package:my_portfolio/features/home/models/skill.dart';
 import 'package:my_portfolio/features/home/widgets/skills/skill_item.dart';
+
+import '../../../../core/theme/app_colors.dart';
 
 class SkillsSection extends StatelessWidget {
   const SkillsSection({super.key});
 
   @override
   Widget build(BuildContext context) {
+    var r = context.responsive;
     return Container(
-      padding: EdgeInsets.all(40),
-      decoration: BoxDecoration(),
+      padding: EdgeInsets.all(r.aboutSectionPadding),
+      decoration: BoxDecoration(color: Colors.black),
       width: double.infinity,
-      child: GridView(
-        shrinkWrap: true,
-        physics: NeverScrollableScrollPhysics(),
-        gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-          maxCrossAxisExtent: 400,
-          crossAxisSpacing: 20,
-          mainAxisSpacing: 20,
-          mainAxisExtent: 250,
-        ),
-        children: skillsList
-            .map(
-              (skill) => SkillItem(
-                title: skill.title,
-                subSkills: skill.subskills,
-                color: skill.skillColor,
+      child: Column(
+        spacing: Responsive.isDesktop(context) ? 80 : 45,
+        children: [
+          Text.rich(
+            TextSpan(
+              text: 'My ',
+              style: GoogleFonts.changaTextTheme().titleLarge?.copyWith(
+                color: AppColors.white,
+                fontSize: r.aboutMeFontSize,
               ),
-            )
-            .toList(),
+              children: [
+                TextSpan(
+                  text: 'Skills!',
+                  style: GoogleFonts.changaTextTheme().titleLarge?.copyWith(
+                    color: AppColors.primary,
+                    fontSize: r.aboutMeFontSize,
+                  ),
+                ),
+              ],
+            ),
+          ),
+
+          Responsive.isDesktop(context)
+              ? GridView(
+                  shrinkWrap: true,
+                  physics: NeverScrollableScrollPhysics(),
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: r.skillsCrossAxisCount,
+                    mainAxisExtent: r.skillsMainAxisExtent,
+                    crossAxisSpacing: 20,
+                    mainAxisSpacing: 20,
+                  ),
+                  children: skillsList
+                      .map(
+                        (skill) => SkillItem(
+                          title: skill.title,
+                          subSkills: skill.subskills,
+                          color: skill.skillColor,
+                        ),
+                      )
+                      .toList(),
+                )
+              : ListView.separated(
+                  physics: NeverScrollableScrollPhysics(),
+                  shrinkWrap: true,
+                  itemBuilder: (BuildContext context, int index) => SkillItem(
+                    title: skillsList[index].title,
+                    subSkills: skillsList[index].subskills,
+                    color: skillsList[index].skillColor,
+                  ),
+                  separatorBuilder: (BuildContext context, int index) =>
+                      SizedBox(height: 20),
+                  itemCount: skillsList.length,
+                ),
+        ],
       ),
     );
   }

@@ -1,6 +1,7 @@
 class ResponsiveTheme {
   const ResponsiveTheme({
-    required this.pagePadding,
+    required this.pagePaddingVertical,
+    required this.pagePaddingHorizontal,
     required this.sectionSpacing,
     required this.heroTitle,
     required this.heading,
@@ -27,9 +28,18 @@ class ResponsiveTheme {
     required this.dataContainerRadius,
     required this.aboutMeBodyFontSize,
     required this.aboutMeFontSize,
+    required this.heroButtonContentSize,
+    required this.heroButtonPadding,
+    required this.aboutSectionHeight,
+    required this.skillsCrossAxisCount,
+    required this.skillsMainAxisExtent,
+    required this.skillsFontSize,
+    required this.skillsTitleSize,
+    required this.aboutSectionPadding,
   });
 
-  final double pagePadding;
+  final double pagePaddingVertical;
+  final double pagePaddingHorizontal;
   final double sectionSpacing;
 
   /// hero section
@@ -47,6 +57,8 @@ class ResponsiveTheme {
   final double contentTopPadding;
   final double contentBottomPadding;
   final double contentLeftPadding;
+  final double heroButtonContentSize;
+  final double heroButtonPadding;
 
   /// right sidebar
 
@@ -64,10 +76,18 @@ class ResponsiveTheme {
   final double dataContainerRadius;
   final double aboutMeFontSize;
   final double aboutMeBodyFontSize;
+  final double aboutSectionHeight;
+  final double aboutSectionPadding;
 
 
 
 
+
+  /// skills section
+  final int skillsCrossAxisCount;
+  final double skillsMainAxisExtent;
+  final double skillsTitleSize;
+  final double skillsFontSize;
 
   final double heading;
   final double body;

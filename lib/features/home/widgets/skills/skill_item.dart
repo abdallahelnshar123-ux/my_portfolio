@@ -16,41 +16,26 @@ class SkillItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: EdgeInsets.all(5),
-      decoration: BoxDecoration(
-        color: AppColors.white,
-        borderRadius: BorderRadius.circular(8),
-      ),
-      width: double.infinity,
-      height: 200,
-      child: Column(
-        crossAxisAlignment: .start,
-        spacing: 10,
-        children: [
-          Text(
-            title,
-            style: context.textTheme.titleLarge?.copyWith(color: Colors.black),
+    var r = context.responsive;
+    return Column(
+      crossAxisAlignment: .start,
+      spacing: 10,
+      children: [
+        Text(
+          title,
+          style: context.textTheme.labelLarge?.copyWith(
+            color: Colors.white,
+            fontSize: r.skillsTitleSize,
           ),
-          Expanded(
-            flex: 1,
-            child: Container(
-              padding: EdgeInsets.all(10),
-              width: double.infinity,
-              margin: EdgeInsets.zero,
-              decoration: BoxDecoration(
-                color: color.withAlpha(77),
-                borderRadius: BorderRadius.circular(8),
-              ),
-              child: skillsChips(context),
-            ),
-          ),
-        ],
-      ),
+        ),
+        skillsChips(context),
+      ],
     );
   }
 
   Widget skillsChips(BuildContext context) {
+    var r = context.responsive;
+
     return Wrap(
       runSpacing: 10,
       spacing: 10,
@@ -63,6 +48,7 @@ class SkillItem extends StatelessWidget {
                 borderRadius: BorderRadius.circular(50),
               ),
               labelStyle: context.textTheme.labelMedium?.copyWith(
+                fontSize: r.skillsFontSize,
                 color: AppColors.white,
               ),
               color: WidgetStatePropertyAll(color.withAlpha(102)),

@@ -21,5 +21,5 @@ abstract final class AppColors {
   static const border = Color(0xFF334155);
 
   // Status
-  static const success = Color(0xFF22C55E);
+  static const success = Color(0xFF25D366);
 }
