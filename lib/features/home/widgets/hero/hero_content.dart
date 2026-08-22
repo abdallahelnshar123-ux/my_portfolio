@@ -40,7 +40,9 @@ class HeroContent extends StatelessWidget {
             children: [
               TextButton.icon(
                 style: ButtonStyle(
-                  padding: WidgetStatePropertyAll(EdgeInsets.all(r.heroButtonPadding)),
+                  padding: WidgetStatePropertyAll(
+                    EdgeInsets.all(r.heroButtonPadding),
+                  ),
                   shape: WidgetStatePropertyAll<OutlinedBorder>(
                     RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
@@ -75,7 +77,9 @@ class HeroContent extends StatelessWidget {
               ),
               TextButton.icon(
                 style: ButtonStyle(
-                  padding: WidgetStatePropertyAll(EdgeInsets.all(r.heroButtonPadding)),
+                  padding: WidgetStatePropertyAll(
+                    EdgeInsets.all(r.heroButtonPadding),
+                  ),
                   shape: WidgetStatePropertyAll<OutlinedBorder>(
                     RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),

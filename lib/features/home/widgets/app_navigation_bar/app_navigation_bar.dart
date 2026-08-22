@@ -49,7 +49,6 @@ class AppNavigationBar extends StatelessWidget {
 
           LetsTalkButton(),
           PopupMenuButton(
-            
             position: .under,
             useRootNavigator: true,
             icon: Icon(Icons.menu),

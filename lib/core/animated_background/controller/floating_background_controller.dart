@@ -10,7 +10,6 @@ const _minIconSize = 24.0;
 const _maxIconSize = 60.0;
 const _minSpeed = 6.0;
 const _maxSpeed = 16.0;
-const _opacity = 0.05;
 const _spacing = 120.0;
 
 class FloatingBackgroundController extends ChangeNotifier {

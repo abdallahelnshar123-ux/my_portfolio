@@ -32,7 +32,9 @@ class _LetsTalkButtonState extends State<LetsTalkButton> {
       ),
       onPressed: _onPressed,
       style: ButtonStyle(
-        padding: WidgetStatePropertyAll(EdgeInsets.all(8)),
+        padding: WidgetStatePropertyAll(
+          EdgeInsets.symmetric(vertical: 0, horizontal: 8),
+        ),
         backgroundColor: WidgetStateProperty.resolveWith<Color>((states) {
           if (states.contains(WidgetState.hovered)) {
             return AppColors.white;

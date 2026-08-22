@@ -131,7 +131,10 @@ class FirstColumn extends StatelessWidget {
               Expanded(
                 child: AppCard(
                   color: Colors.cyan,
-                  padding: const EdgeInsets.symmetric(vertical: 15 , horizontal: 10),
+                  padding: const EdgeInsets.symmetric(
+                    vertical: 15,
+                    horizontal: 10,
+                  ),
                   child: Column(
                     spacing: 20,
                     children: [
@@ -140,7 +143,7 @@ class FirstColumn extends StatelessWidget {
                         child: Text(
                           'Tech i work with',
                           style: context.textTheme.labelSmall?.copyWith(
-                            fontSize: Responsive.isTablet(context) ?20:12,
+                            fontSize: Responsive.isTablet(context) ? 20 : 12,
                           ),
                         ),
                       ),

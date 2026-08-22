@@ -6,7 +6,7 @@ import '../../../core/animated_background/widgets/floating_background.dart';
 import '../../../core/constants/app_sizes.dart';
 import '../../../core/responsive/responsive.dart';
 import '../models/nav_item.dart';
-import '../widgets/about_me/about_section1.dart';
+import '../widgets/about_me/about_section.dart';
 import '../widgets/app_navigation_bar/app_navigation_bar.dart';
 import '../widgets/hero/hero_section.dart';
 
@@ -33,7 +33,7 @@ class _HomeLayoutState extends State<HomeLayout> {
   // final contactKey = GlobalKey();
 
   late final List<NavItem> navItems = [
-    NavItem(title: 'Home', key: heroKey),
+    // NavItem(title: 'Home', key: heroKey),
     NavItem(title: 'About', key: aboutKey),
     NavItem(title: 'Skills', key: skillsKey),
     NavItem(title: 'Projects', key: projectsKey),
@@ -85,7 +85,7 @@ class _HomeLayoutState extends State<HomeLayout> {
                     crossAxisAlignment: .stretch,
                     children: [
                       HeroSection(key: heroKey),
-                      AboutSection1(key: aboutKey),
+                      AboutSection(key: aboutKey),
                       SkillsSection(key: skillsKey),
                       ProjectsSection(key: projectsKey),
                       // ContactSection(key: contactKey),

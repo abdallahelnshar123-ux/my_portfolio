@@ -40,11 +40,13 @@ class ResponsiveValues {
     aboutMeBodyFontSize: 10,
     aboutMeFontSize: 30,
     aboutSectionHeight: 2,
+    aboutSectionPadding: 20,
 
-
-
-
-
+    /// skills section
+    skillsCrossAxisCount: 1,
+    skillsMainAxisExtent: 150,
+    skillsFontSize: 12,
+    skillsTitleSize: 10,
 
     heading: 30,
     body: 16,
@@ -95,6 +97,13 @@ class ResponsiveValues {
     aboutMeBodyFontSize: 13,
     aboutMeFontSize: 50,
     aboutSectionHeight: 1.9,
+    aboutSectionPadding: 25,
+
+    /// skills section
+    skillsCrossAxisCount: 1,
+    skillsMainAxisExtent: 110,
+    skillsFontSize: 12,
+    skillsTitleSize: 11,
 
     heading: 36,
     body: 18,
@@ -144,6 +153,13 @@ class ResponsiveValues {
     aboutMeBodyFontSize: 15,
     aboutMeFontSize: 70,
     aboutSectionHeight: 0.6,
+    aboutSectionPadding: 50,
+
+    /// skills section
+    skillsCrossAxisCount: 2,
+    skillsMainAxisExtent: 130,
+    skillsFontSize: 13,
+    skillsTitleSize: 10,
 
     heading: 42,
     body: 20,

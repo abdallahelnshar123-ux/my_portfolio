@@ -31,6 +31,11 @@ class ResponsiveTheme {
     required this.heroButtonContentSize,
     required this.heroButtonPadding,
     required this.aboutSectionHeight,
+    required this.skillsCrossAxisCount,
+    required this.skillsMainAxisExtent,
+    required this.skillsFontSize,
+    required this.skillsTitleSize,
+    required this.aboutSectionPadding,
   });
 
   final double pagePaddingVertical;
@@ -72,10 +77,17 @@ class ResponsiveTheme {
   final double aboutMeFontSize;
   final double aboutMeBodyFontSize;
   final double aboutSectionHeight;
+  final double aboutSectionPadding;
 
 
 
 
+
+  /// skills section
+  final int skillsCrossAxisCount;
+  final double skillsMainAxisExtent;
+  final double skillsTitleSize;
+  final double skillsFontSize;
 
   final double heading;
   final double body;

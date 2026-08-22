@@ -11,7 +11,11 @@ class PortfolioApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: AppTheme.dark,
-      home: const HomePage(),
+      home: Title(
+        title: 'Abdallah Elnshar — Flutter Developer',
+        color: Colors.black,
+        child: HomePage(),
+      ),
     );
   }
 }
