@@ -21,21 +21,15 @@ class ResponsiveValues {
     contentLeftPadding: 30,
     contentRightPadding: 30,
     contentTopPadding: 50,
-    heroButtonContentSize: 13 ,
+    heroButtonContentSize: 13,
     heroButtonPadding: 10,
-
-
-
-
-
 
     /// right sidebar
     rightSideBarPadding: 15,
-    rightSideBarArrowSize: 15 ,
+    rightSideBarArrowSize: 15,
     rightSideTextSize: 10,
     socialIconWidth: 8,
     rightSideBarSpacing: 10,
-
 
     /// left navigation
     leftNavigationFontSize: 12,
@@ -45,12 +39,7 @@ class ResponsiveValues {
     dataContainerRadius: 80,
     aboutMeBodyFontSize: 10,
     aboutMeFontSize: 30,
-
-
-
-
-
-
+    aboutSectionHeight: 0.6,
 
     heading: 30,
     body: 16,
@@ -82,19 +71,16 @@ class ResponsiveValues {
     contentLeftPadding: 10,
     contentRightPadding: 10,
     contentTopPadding: 10,
-    heroButtonContentSize: 20 ,
+    heroButtonContentSize: 20,
     heroButtonPadding: 15,
-
-
-
-
 
     /// right sidebar
     rightSideBarPadding: 25,
-    rightSideBarArrowSize: 20 ,
+    rightSideBarArrowSize: 20,
     rightSideTextSize: 15,
     socialIconWidth: 10,
     rightSideBarSpacing: 10,
+
     /// left navigation
     leftNavigationFontSize: 16,
 
@@ -103,10 +89,7 @@ class ResponsiveValues {
     dataContainerRadius: 100,
     aboutMeBodyFontSize: 13,
     aboutMeFontSize: 50,
-
-
-
-
+    aboutSectionHeight: 0.6,
 
     heading: 36,
     body: 18,
@@ -137,32 +120,25 @@ class ResponsiveValues {
     contentLeftPadding: 10,
     contentRightPadding: 10,
     contentTopPadding: 10,
-    heroButtonContentSize: 25 ,
+    heroButtonContentSize: 25,
     heroButtonPadding: 20,
-
-
-
 
     /// right sidebar
     rightSideBarPadding: 35,
-    rightSideBarArrowSize: 20 ,
+    rightSideBarArrowSize: 20,
     rightSideTextSize: 15,
     socialIconWidth: 15,
     rightSideBarSpacing: 10,
 
     /// left navigation
-    leftNavigationFontSize: 20,
+    leftNavigationFontSize: 18,
 
     /// about section
     dataContainerMargin: 130,
     dataContainerRadius: 250,
     aboutMeBodyFontSize: 15,
     aboutMeFontSize: 70,
-
-
-
-
-
+    aboutSectionHeight: 0.6,
 
     heading: 42,
     body: 20,

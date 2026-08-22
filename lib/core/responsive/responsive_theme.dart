@@ -30,6 +30,7 @@ class ResponsiveTheme {
     required this.aboutMeFontSize,
     required this.heroButtonContentSize,
     required this.heroButtonPadding,
+    required this.aboutSectionHeight,
   });
 
   final double pagePaddingVertical;
@@ -70,6 +71,7 @@ class ResponsiveTheme {
   final double dataContainerRadius;
   final double aboutMeFontSize;
   final double aboutMeBodyFontSize;
+  final double aboutSectionHeight;
 
 
 

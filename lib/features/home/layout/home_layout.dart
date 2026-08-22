@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/features/home/widgets/about_me/about_section.dart';
 import 'package:my_portfolio/features/home/widgets/projects/projects_section.dart';
 import 'package:my_portfolio/features/home/widgets/skills/skills_section.dart';
 
@@ -7,8 +6,9 @@ import '../../../core/animated_background/widgets/floating_background.dart';
 import '../../../core/constants/app_sizes.dart';
 import '../../../core/responsive/responsive.dart';
 import '../models/nav_item.dart';
-import '../widgets/hero/hero_section.dart';
+import '../widgets/about_me/about_section1.dart';
 import '../widgets/app_navigation_bar/app_navigation_bar.dart';
+import '../widgets/hero/hero_section.dart';
 
 class HomeLayout extends StatefulWidget {
   const HomeLayout({super.key});
@@ -85,7 +85,7 @@ class _HomeLayoutState extends State<HomeLayout> {
                     crossAxisAlignment: .stretch,
                     children: [
                       HeroSection(key: heroKey),
-                      AboutSection(key: aboutKey),
+                      AboutSection1(key: aboutKey),
                       SkillsSection(key: skillsKey),
                       ProjectsSection(key: projectsKey),
                       // ContactSection(key: contactKey),
